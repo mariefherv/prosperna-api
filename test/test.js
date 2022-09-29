@@ -317,8 +317,8 @@ describe("Test Suite for Products API", () => {
         })
     })
 
-    // Trying to update products if not logged in (403)
-    it("Update Product Details (Not Logged In) - 403", (done) => {
+    // Trying to update products if not logged in (401)
+    it("Update Product Details (Not Logged In) - 401", (done) => {
         chai.request("http://localhost:4000")
         .put('/products/update/1')
         .type('json')
@@ -355,8 +355,8 @@ describe("Test Suite for Products API", () => {
         })
     })
 
-    // Trying to delete products if not logged in (403)
-    it("Delete Product (Not Logged In) - 403", (done) => {
+    // Trying to delete products if not logged in (401)
+    it("Delete Product (Not Logged In) - 401", (done) => {
         chai.request("http://localhost:4000")
         .delete('/products/delete/1')
         .type('json')
