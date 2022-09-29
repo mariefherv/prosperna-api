@@ -92,7 +92,6 @@ function updateProduct(email, data, id){
 }
 
 // for deleting a product
-// for updating product details
 function deleteProduct(email, id){
 
     user = users.find(user => user.email === email)
